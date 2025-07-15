@@ -70,5 +70,7 @@ export const getNatType = async () => {
 
   const candidates = await Promise.all([getCandidates(), getCandidates()])
   const natType = judgeNatType(...candidates)
-  return natType
+  const [candidate] = candidates[0]
+  const { address } = candidate
+  return { address, natType }
 }
