@@ -1,0 +1,36 @@
+{
+  "name": "pr-nat-type",
+  "description": "快速创建 WebSocket 链接 内置心跳和重连逻辑。",
+  "version": "0.1.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vite-plugin-dts": "^4.4.0"
+  },
+  "private": false,
+  "author": "Breathe",
+  "keywords": [
+    "pr-nat-type"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Breathe97/pr-nat-type"
+  }
+}
